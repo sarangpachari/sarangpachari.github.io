@@ -4,47 +4,3389 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta Description -->
+    <meta name="description" content="Question World by Sarang.P.Achari">
+    <meta name="keywords"
+        content="qbucket, one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+    <meta name="author" content="SARANG.P.ACHARI">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SARANG.P.ACHARI</title>
-    <!-- CSS of index -->
+    <title>Q-Bucket</title>
+    <!-- stylesheet of index -->
     <link rel="stylesheet" href="ASSETS/CSS/index.css">
-    <!-- link of icon css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- top navigation css -->
-    <link rel="stylesheet" href="ASSETS/CSS/topnav.css">
-    <!-- media screen css -->
-    <link rel="stylesheet" href="ASSETS/CSS/media screen.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="ASSETS/CSS/swiper-bundle.min.css">
+
+    <!-- CSS for subjects-->
+    <link rel="stylesheet" href="ASSETS/CSS/subjects.css">
+
+    <!-- script link for dropdown selection -->
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous">
+        </script>
 
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#projects">My Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <div class="page1">
-        <div class="selfintro">
-            <h1>
-                <span class="me">HELLO, MY NAME IS<br>________</span>
-                <span class="myname">Sarang.P.Achari</span>
-                <span class="position">Front-end Developer</span>
-            </h1>
-            <a href = "mailto: sarangpachari@gmail.com" class="social"><i class='fa fa-envelope-square fa-2x'></i> sarangpachari@gmail.com</a><br><br>
-            <a href="https://www.linkedin.com/in/sarang-p-achari-758445226" class="social"><i class='fa fa-linkedin-square fa-2x'></i> Sarang P Achari</a>
+    <div>
+        <div class="heading">
+            <div>
+                <p class="slide-up title"><span class="green">Q-Bucket</span></p>
+            </div>
+            <div>
+                <p class="slide-up titlequote">~ The World of Questions</p>
+            </div>
         </div>
-        <div class="profilepic">
-            <img src="ASSETS/IMAGES/sarang.png">
+        <img src="ASSETS/IMAGES/qbucket.PNG" class="qbucket">
+        <div class="quoteDiv">
+            <p class="slide-up quote">“If you don't do your revision properly,<br>you know what'll happen?<br>YOU
+                SHALL NOT PASS!”</p>
+        </div>
+        <div class="mgDiv">
+            <p class="slide-up mg">Based on Mahatma Gandhi University Syllabus 2018-22</p>
         </div>
     </div>
-    <div id="projects" class="projects">
+    <div class="page2">
+        <div class="selection">
+            <div class="courseSelect">
+                <label for="course">Select a course : </label>
+                <select name="course" id="course">
+                    <option value="">Select</option>
+                    <option value="bca">Bachelor of Computer Application ( BCA )</option>
+                    <option value="bba">Bachelor of Business Administration ( BBA )</option>
+                    <option value="bcomC">B.com Corporation</option>
+                    <option value="bcomFt">B.com Finance & Taxation</option>
+                    <option value="elec">Bsc.Electronics</option>
+                    <option value="bt">Bsc.Biotechnology</option>
+                </select>
+            </div>
+            <div class="semSelect">
+                <label for="semester">Select semester : </label>
+                <select name="semester" id="semester">
+                    <option value="">Select</option>
+                    <option value="sem1">Semester 1</option>
+                    <option value="sem2">Semester 2</option>
+                    <option value="sem3">Semester 3</option>
+                    <option value="sem4">Semester 4</option>
+                    <option value="sem5">Semester 5</option>
+                    <option value="sem6">Semester 6</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- SEMESTER 1 -->
+        <div id="showbcasem1" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
 
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Methodology of Programming<br>&<br>Programming in C</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/16T3rDTEXSZpdrzcsFL2n5uUhp3naBAU-?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Computer Fundementals<br>&<br>Digital Principles</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1i5asObMTgEkvMfsGt023T_SqZeyHP6WM?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Basic Statistics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1aMdkxPtZacwPcG1UOzDSmER6rT_8B6pB?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Discrete Mathematics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1b0eEgWmqhQjtwWIK0bHoXMm1-UqYr1be?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Fine Tune<br>Your English<br>( English )</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1L1sji89s5jGUN27s3690RAEYyk2H4gTg?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbbasem1" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Principles<br>&<br>Methodology of Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1GzhE2BL9qx7cwqH4yFWNiqgB3B4s2gr-?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Business Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/17u-EnejxSg2lmFSFqp7Zw-nax9MiyBFf?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Fundamentals<br>of<br>Business Mathematics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/15XB0pJ0DudfDKO-GxNdhYgT5UMvpLTbi?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Fundamentals<br>of<br>Business Statistics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1_yEMMyNJsGdu2VM5QBb8-IyG_k1QOyuP?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Fine tune Your English<br>( English )</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1YkIUJQbv4DYOvzQojyUzz-P4F3bg5a2Z?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomCsem1" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Dimensions & Methodology<br>of<br>Business Studies</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Financial Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Banking<br>&<br>Insurance</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Corporate Regulations<br>&<br>Administration</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Malayalam</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomFtsem1" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Dimension<br>&<br>Methedology of Business Studies</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Financial Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Banking<br>&<br>Insurance</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Corporate Regulations<br>&<br>Administration</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Malayalam</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showelecsem1" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Methodology of Science</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Solid State<br>Physics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Mathematics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Basic Electronics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbtsem1" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Methodology<br>in<br>Bio-Technology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Fundamentals Micro Biology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Elementary Bio-Chemistry</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Basic Life Sciences</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                            </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- SEMESTER 2 -->
+        <div id="showbcasem2" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Object Oriented<br>Programming Using<br>C++</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1JnHup_cUK4X4rDELU6cD7CsSf-jUO7ub?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Computer Organization<br>&<br>Architecture</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/121ncSFpD_WemrPSfO7nLXtAcWMr35O5d?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Database Management<br>Systems</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/19N74I7vr22m9soVdanbvtVBwq8aqS24f?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Discrete Mathematics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/15xIzVuPmOtM-xe3WuF8MRSkfVNrHqZU9?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Issues that Matter<br>( English )</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1LJgGvh5uLZMRlVKD7qcKn1OEwY0XMaFh?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbbasem2" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Business Communication</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1WpCLSfIKAcEyslNPB-GMUooWHxmuxdEW?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Cost<br>&<br>Management Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1blmRc1oz9_yicPo6BxVbDQtnaR2HYIQB?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Mathematics<br>for<br>Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1YgExHJeRYZcBuXAEjR-T4OFAUci7xHsf?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Statistics<br>for<br>Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1E3xKJIKrFmYSH3Tv-aQstU0buI5D09P6?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Issues That Matter<br>( English )</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1SmmkOgVYD2-9KS6SEoAqorO8MN7gghCZ?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomCsem2" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Malayalam</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Financial Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Business Regulatory<br>Framework</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Business Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Principles<br>of<br>Business Decisions</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomFtsem2" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Malayalam</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Financial Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Business Regulatory<br>Framework</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Business Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Principles<br>of<br>Business Decisions</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showelecsem2" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Electronic Circuits</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Network Theory</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Digital Electronics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Mathematics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbtsem2" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Cell Biology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Elementary Chemistry<br>for<br>Biology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Evolution<br>&<br>Development Biology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Fundamentals<br>of<br>Microbiology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- SEMESTER 3 -->
+        <div id="showbcasem3" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Advanced Statistical<br>Methods</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/14C8UsYQReNRUhflw6GuRHKqHBdBk5Rpy?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Computer Graphics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1gtsaNN5GlltJ63PRWfV5Dp7JrZlSNSzJ?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Microprocessor<br>&<br>PC Hardware</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1ikgie-_97FE2sm5ul00v3XMI8EfjqVU9?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Operating Systems</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/146cMjRyd3EfB1QJOHnM8Lh_UqmRTBHMN?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Data Structure<br>Using C++</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1bai3to7HsV6dO8DtJ-8b2Pe2oFxWVWvT?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbbasem3" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Human Resource<br>Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/18iYtW-LJc-rTXKLrT1BypxOAApP8ftH6?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Marketing<br>Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1DfjYOzbxQ_Hp5rHxNOG9-ZLluCLFh2U2?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Business<br>Laws</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1_epsElerBD5noGP0B7oqcKNMpQ4I3oML?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Research Methodology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1sT39d24S3Ccc3ZXZ8OsV2slhL7rhPdev?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomCsem3" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Corporate Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Quantitative Techniques<br>for Business</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Financial Markets<br>&<br>Operations</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Marketing Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomFtsem3" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Corporate Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Quantitative Techniques<br>for Business</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Financial Markets<br>&<br>Operations</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Marketing Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showelecsem3" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Analog Communication</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Analog IC's<br>&<br>Applications</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Electromagnetic Theory</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">8085 Microprocessor</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Probability<br>&<br>Statistics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbtsem3" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Immunology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Genetics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Biostatistics<br>&<br>Computer Applications</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Enzymology<br>&<br>Metabolism</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Applied Microbiology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- SEMESTER 4 -->
+        <div id="showbcasem4" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Operations<br>&<br>Research</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1a3K52YoHTH3RWlLiiUYSBuE9GW_w4pUN?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Design & Analysis<br>of<br>Algorithms</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1teAmt3S-uC_3bd2If9sTIOLNLxgoQGVs?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">System Analysis<br>&<br>Software<br>Engineering</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1phqV-P-UkUICSLgkEmbBgi_Gv8J4aO8m?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Linux Administration</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1Rmx1ZqLlucSOrM8aURaQP0V0X_v1RXyL?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Web Programming<br>Using PHP</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1veRLCstlgcAtfSaTS8yV3sz9hMT6_Mps?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbbasem4" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Financial Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1WGsTwOP1agtiHkbmUnpugFaR1rxIJ1-E?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Managerial Economics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1J1PuYiN1RNz0Idj4_nNQXg_BlcjziJUo?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Entrepreneurship</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1cCtgtrJ6GwAtMrmQuE1brqj0xBdZ31Sc?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Basic Informatics<br>for<br>Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1kH4nBPZBDeTz50VgCavPwPqjbNh11WJV?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Corporate Law</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/13DlBpi6r1LJCMgzdJFHmwqwVSMpwk3IT?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomCsem4" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Corporate Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Quantitative Techniques<br>for Business</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Enterpreneurship<br>Development &<br>Project Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Management<br>of<br>Co-operative Enterprises</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomFtsem4" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">English</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Corporate Accounts</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Quantitative Techniques<br>for<br>Business</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Entrepreneurship<br>Development & Project<br>Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showelecsem4" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Programming in C</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Microwave Electronics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Digital Communication</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Instrumentation Electronics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbtsem4" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Molecular Biology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Enzymology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Biophysics<br>&<br>Bioinformatics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Nutritional<br>&<br>Clinical Biochemistry</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Medical Microbiology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- SEMESTER 5 -->
+        <div id="showbcasem5" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Computer Networks</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1vJnbYu7fd9v1Pc8HmY8p7AnRxorqKO6A?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">IT & Environment</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Java Programming<br>Using Linux</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/104ZwX67IdQnE82Qw_kelyDU8ujsb-3Pm?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Computer Fundamentals,<br>Internet & MS-office</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1FrzFI1auXyaLnwXKKA7VDx7_R5n2lnHn?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbbasem5" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Organisational<br>Behaviour</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1BgJGvA7uFDPTEaPjMxs0tpWNSaRWoJaZ?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Brand Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1hQ31EMbzxE5AzJrQ6nEkzz08hqI0T7_s?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Environment Science<br>&<br>Human Rights</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1_9Jb-OKch0mBHoj5HFfIDBMvUSguMVRa?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Intellectual Property<br>Rights & Industrial<br>Laws</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1VzDacDZ3XoYKZIh4uPHC5RrY6JYjUT9I?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Operations Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1wgmwzlRDmoZ-y7nVZ1xV-UZcEs5LTw6z?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Industrial Relations</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1Ib-iyaqxkUZ6IHNoaPaRL5wx_4iXz6Dv?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomCsem5" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Cost Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Environment Management<br>&<br>Human Rights</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Financial Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Fundamentals of Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomFtsem5" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Cost Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Environment Management<br>&<br>Human Rights</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Financial Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Fundamentals of Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showelecsem5" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Microcontrollers<br>&<br>Applications</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Environmental Awareness<br>&<br>Human Rights</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Computer Hardware</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Computer Assembly</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbtsem5" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Recombinant DNA Technology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Industrial Biotechnology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Animal Biotechnology/h2>
+                                    <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                    <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Biotechnology<br>for<br>Sustainable Development</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- SEMESTER 6 -->
+        <div id="showbcasem6" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Cloud Computing</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1jSkUhGuuajZuNsygfMEmRHjqSjj5U_34?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Mobile Application<br>Development - Android</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1t_S0OAw6OP_GY7OaiTA5pQjtilqKr9fJ?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Data Mining</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/18MtKvqxhu52UadtOi2o83y8IKDOwVlne?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbbasem6" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Investment & Insurance<br>Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1EEcBK9RvIMNiltzpArXlskcKX2IEkB9x?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Principles<br>of<br>Tourism Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/166Qb4fs-IGiZyBGJ_ZxPVsNC79miOfUa?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Strategic Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1E-vuqsF60iyd8NkZ1E1gW2sW0C-UaYHL?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Communication Skills<br>&<br>Personality Development</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href="https://drive.google.com/drive/folders/1CYiMcNIEl3E_nprG4lHQ7o-PiIgxL8Ix?usp=sharing"><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomCsem6" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Cost Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Advertising<br>&<br>Sales Management</bbr>
+                                </h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Auditing & Assurance</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Management Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbcomFtsem6" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Cost Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Advertisement<br>&<br>Sales Management</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Auditing & Assurance</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Management Accounting</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showelecsem6" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Optoelectronics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Computer Networks</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Digital Signal<br>Processing</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Power Electronics</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div id="showbtsem6" class="semdiv" style="display: none;">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Plant Biotechnology</h2>
+                                <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <!-- <div class="card-image">
+                                    <img src="ASSETS/IMAGES/profile1.jpg" alt="" class="card-img">
+                                </div> -->
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name">Industrial Biotechnology/h2>
+                                    <!-- <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p> -->
+
+                                    <a href=""><button class="button">Download</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </div>
+    <footer>
+        <p>&copy; Designed & Developed by <a href="https://sarangpachari.github.io/" class="sarang">Sarang.P.Achari</a> -
+            IEDC MAC
+        </p>
+    </footer>
 </body>
-<script src="ASSETS/JS/topnav.js"></script>
+<!-- dropdown js -->
+<script src="ASSETS/JS/dropdown.js"></script>
+
+<!-- Swiper JS -->
+<script src="ASSETS/JS/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="ASSETS/JS/subjects.js"></script>
+
+<!-- auto height adjuster -->
+<script src="autoheight.js"></script>
 
 </html>
