@@ -37,6 +37,8 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Q-Bucket",
+    liveLink:"https://qbucket.mac.edu.in/",
+    gitLink:"",
     image: project1,
     description:
       "A fully functional platform built with HTML and Pure CSS for browsing previous Mahatma Gandhi University question papers, featuring a user-friendly interface.",
@@ -44,6 +46,8 @@ export const PROJECTS = [
   },
   {
     title: "E-Commerce Website",
+    liveLink:"",
+    gitLink:"",
     image: project2,
     description:
       "The E-commerce Website uses Bootstrap for a responsive and modern design, ensuring a smooth user experience. It is powered by Express.js and Node.js for robust server-side functionality, with MongoDB providing flexible and reliable data storage.",
@@ -51,6 +55,8 @@ export const PROJECTS = [
   },
   {
     title: "Microsoft Clone Website UI",
+    liveLink:"https://simple-clone-by-sarang.netlify.app/",
+    gitLink:"https://github.com/sarangpachari/microsoft-clone.git",
     image: project3,
     description:
       "A sleek Microsoft Clone built with HTML and Tailwind CSS for a modern, responsive design.",
@@ -58,6 +64,8 @@ export const PROJECTS = [
   },
   {
     title: "Todo App",
+    liveLink:"https://sarangpachari.github.io/todoapp/",
+    gitLink:"https://github.com/sarangpachari/todoapp.git",
     image: project4,
     description:
       "A simple and efficient platform for creating and managing tasks, built with React.js and styled with CSS.",
@@ -65,6 +73,8 @@ export const PROJECTS = [
   },
   {
     title: "Just Home Real Estate UI",
+    liveLink:"https://justhomebysarang.netlify.app/#",
+    gitLink:"https://github.com/sarangpachari/justhome.git",
     image: project5,
     description:
       "A sleek real estate UI built with HTML and Tailwind CSS for a modern, responsive design.",
@@ -72,6 +82,8 @@ export const PROJECTS = [
   },
   {
     title: "MA College Map Website",
+    liveLink:"https://sarangpachari.github.io/macmap/",
+    gitLink:"https://github.com/sarangpachari/macmap.git",
     image: project6,
     description:
       "A simple website for MA College, showcasing an interactive map built with HTML and Pure CSS.",
@@ -79,6 +91,8 @@ export const PROJECTS = [
   },
   {
     title: "Me plants - Plants Sale UI",
+    liveLink:"https://meplants.netlify.app/",
+    gitLink:"https://github.com/sarangpachari/me-plants-task.git",
     image: project7,
     description:
       "A responsive Plants Sale UI built with HTML and Bootstrap, featuring a sleek interface for showcasing and purchasing plants.",
@@ -86,6 +100,8 @@ export const PROJECTS = [
   },
   {
     title: "Furniture World UI",
+    liveLink:"https://sarangpachari.github.io/furnitureworld/",
+    gitLink:"https://github.com/sarangpachari/furnitureworld.git",
     image: project8,
     description:
       "Furniture World UI is a sleek and responsive web interface built with HTML and Pure CSS, focused on modern furniture design.",
@@ -93,6 +109,8 @@ export const PROJECTS = [
   },
   {
     title: "FoodHut UI",
+    liveLink:"https://foodhut-sarang.netlify.app/",
+    gitLink:"https://github.com/sarangpachari/foodhut.git",
     image: project9,
     description:
       "Foodhut UI is a sleek and responsive interface built using HTML and Tailwind CSS.",
@@ -100,6 +118,8 @@ export const PROJECTS = [
   },
   {
     title: "DigiExpert UI",
+    liveLink:"",
+    gitLink:"",
     image: project10,
     description:
       " A sleek, modern interface built with HTML and Tailwind CSS.",

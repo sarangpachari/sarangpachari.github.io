@@ -51,7 +51,7 @@ const Hero = () => {
                 variants={container(1.5)}
                 initial="hidden"
                 animate="visible"
-                className="border px-4 py-3 w-max hover:text-white animate-pulse"
+                className="border px-4 py-3 w-max hover:text-white"
               >
                 <a href="#contact">Get In Touch</a>
               </motion.button>
@@ -60,7 +60,7 @@ const Hero = () => {
                 variants={container(2)}
                 initial="hidden"
                 animate="visible"
-                className="border px-4 py-3 w-max hover:text-white"
+                className="border px-4 py-3 w-max hover:text-white animate-pulse"
               >
                 <a href="https://drive.google.com/file/d/1pp7uW4QcEx0uPXpSByG3dv5hTT6q5Q1C/view?usp=drive_link">
                   Resume

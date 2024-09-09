@@ -1,5 +1,7 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { LuGithub } from "react-icons/lu";
 
 const Projects = () => {
   return (
@@ -36,7 +38,16 @@ const Projects = () => {
               className="w-full max-w-xl lg:w-3/4"
             >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
+              <div className="flex items-center gap-2 pb-2">
+                <a href={project.liveLink} className="animate-pulse text-purple-200 hover:text-white">
+                  Live
+                </a>
+                <FaExternalLinkAlt className="text-xs" />
+                <a href={project.gitLink} className="text-sm ml-5">Source Code</a>
+                <LuGithub className="text-sm" />
+              </div>
               <p className="mb-4 text-neutral-400">{project.description}</p>
+              
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
