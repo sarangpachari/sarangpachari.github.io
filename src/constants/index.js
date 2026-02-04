@@ -100,7 +100,7 @@ export const PROJECTS = [
     description:
       "Developed a homestay website to simplify bookings and communication with location highlights. Integrated Google Maps API for location display, WhatsApp API for direct inquiries, and implemented a responsive UI with smooth navigation using React Router DOM.",
     technologies: [
-      "React",
+      "React JS",
       "Tailwind CSS",
       "Google Maps API",
       "WhatsApp API",
