@@ -1,56 +1,49 @@
 import logo from "../assets/sarang-logo.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <nav className="mb-20 flex items-center justify-between pt-5">
+    <nav className="relative z-50 py-6 flex items-center justify-between border-b border-neutral-900/50 backdrop-blur-md sticky top-0 bg-neutral-950/20 px-4 -mx-4 lg:mx-0 lg:px-0">
       <div className="flex flex-shrink-0 items-center">
-        <img src={logo} alt="logo" className="mx-2 h-6" />
+        <motion.img
+          whileHover={{ scale: 1.1, rotate: [0, -5, 5, 0] }}
+          src={logo}
+          alt="Sarang Logo"
+          className="mx-2 h-8 w-auto cursor-pointer filter brightness-110"
+        />
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a href="https://www.linkedin.com/in/sarangpachari/">
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -50 }}
-            transition={{ duration: 0.5 }}
-          >
-            <FaLinkedin />
-          </motion.div>
-        </a>
 
-        <a href="https://github.com/sarangpachari">
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -50 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <FaGithub />
-          </motion.div>
-        </a>
+      <div className="flex items-center gap-4 lg:gap-6 text-xl lg:text-2xl">
+        <motion.a
+          whileHover={{ y: -4, color: "#0077B5" }}
+          href="https://www.linkedin.com/in/sarangpachari/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-neutral-400 p-2 hover:bg-neutral-800/50 rounded-full transition-all"
+        >
+          <FaLinkedin />
+        </motion.a>
 
-        <a href="">
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -50 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <FaInstagram />
-          </motion.div>
-        </a>
+        <motion.a
+          whileHover={{ y: -4, color: "#FFF" }}
+          href="https://github.com/sarangpachari"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-neutral-400 p-2 hover:bg-neutral-800/50 rounded-full transition-all"
+        >
+          <FaGithub />
+        </motion.a>
 
-        <a href="https://wa.me/+917012981845">
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: -50 }}
-            transition={{ duration: 0.5, delay: 0.9 }}
-          >
-            <FaWhatsapp />
-          </motion.div>
-        </a>
+        <motion.a
+          whileHover={{ y: -4, color: "#25D366" }}
+          href="https://wa.me/+917012981845"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-neutral-400 p-2 hover:bg-neutral-800/50 rounded-full transition-all"
+        >
+          <FaWhatsapp />
+        </motion.a>
       </div>
     </nav>
   );

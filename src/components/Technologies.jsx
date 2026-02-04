@@ -1,22 +1,16 @@
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt } from "react-icons/fa";
+import { RiTailwindCssFill, RiReactjsLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
-import { RiReactjsLine } from "react-icons/ri";
-import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { FaGitAlt } from "react-icons/fa";
-
+import { SiExpress, SiMongodb, SiPostgresql } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
-  initial: { y: -10 },
+  initial: { y: -8 },
   animate: {
-    y: [10, -10],
+    y: [8, -8],
     transition: {
       duration: duration,
-      ease: "linear",
+      ease: "easeInOut",
       repeat: Infinity,
       repeatType: "reverse",
     },
@@ -24,100 +18,53 @@ const iconVariants = (duration) => ({
 });
 
 const Technologies = () => {
+  const techStack = [
+    { icon: <RiReactjsLine className="text-4xl lg:text-5xl text-cyan-400" />, duration: 2.5, name: "React" },
+    { icon: <FaNodeJs className="text-4xl lg:text-5xl text-green-500" />, duration: 3, name: "Node.js" },
+    { icon: <SiMongodb className="text-4xl lg:text-5xl text-green-600" />, duration: 5, name: "MongoDB" },
+    { icon: <SiPostgresql className="text-4xl lg:text-5xl text-blue-400" />, duration: 2, name: "PostgreSQL" },
+    { icon: <SiExpress className="text-4xl lg:text-5xl text-white" />, duration: 6, name: "Express" },
+    { icon: <IoLogoJavascript className="text-4xl lg:text-5xl text-yellow-400" />, duration: 3.5, name: "JavaScript" },
+    { icon: <RiTailwindCssFill className="text-4xl lg:text-5xl text-cyan-400" />, duration: 4, name: "Tailwind" },
+    { icon: <FaHtml5 className="text-4xl lg:text-5xl text-orange-500" />, duration: 2.8, name: "HTML5" },
+    { icon: <FaGitAlt className="text-4xl lg:text-5xl text-orange-600" />, duration: 4.5, name: "Git" },
+  ];
+
   return (
-    <div className="border-b border-neutral-800 pb-24">
-      <motion.h2 
-      whileInView={{opacity:1, y: 0}}
-      initial={{opacity:0, y: -100}}
-      transition={{duration: 1.5}}
-      className="my-20 text-center text-4xl">Technologies</motion.h2>
-      <motion.div 
-        whileInView={{opacity:1, x:0}}
-        initial={{opacity:0, x:-100}}
-        transition={{duration:1.5}}
-      className="flex flex-wrap items-center justify-center gap-4">
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaHtml5 className="text-7xl text-orange-500" />
-        </motion.div>
+    <section id="technologies" className="border-b border-neutral-900 pb-20">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.5 }}
+        className="my-20 text-center text-3xl font-light tracking-tight"
+      >
+        Core <span className="text-neutral-500">Tech Stack</span>
+      </motion.h2>
 
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaCss3Alt className="text-7xl text-blue-500" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <RiTailwindCssFill className="text-7xl text-cyan-400" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(3.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <IoLogoJavascript className="text-7xl text-yellow-400" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaNodeJs className="text-7xl text-green-500" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(7)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiExpress className="text-7xl" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(4.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiMongodb className="text-7xl text-green-500" />
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(8)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaGitAlt className="text-7xl text-orange-600" />
-        </motion.div>
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1 }}
+        className="flex flex-wrap items-center justify-center gap-6 lg:gap-8"
+      >
+        {techStack.map((tech, index) => (
+          <div key={index} className="flex flex-col items-center gap-2">
+            <motion.div
+              variants={iconVariants(tech.duration)}
+              initial="initial"
+              animate="animate"
+              className="relative group p-4 rounded-2xl border border-neutral-800 bg-neutral-900/50 hover:border-neutral-700 transition-colors"
+            >
+              <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 blur-xl transition-opacity rounded-2xl" />
+              {tech.icon}
+            </motion.div>
+            <span className="text-[10px] uppercase tracking-widest text-neutral-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+              {tech.name}
+            </span>
+          </div>
+        ))}
       </motion.div>
-    </div>
+    </section>
   );
 };
 
