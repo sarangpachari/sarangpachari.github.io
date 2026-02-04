@@ -46,7 +46,13 @@ export const EXPERIENCES = [
     description: ` I specialize in freelancing web development projects using the MERN stack. I handle both front-end and back-end development, creating dynamic and responsive applications with MongoDB, Express.js, React.js, and Node.js, ensuring a seamless and integrated web experience for clients.`,
     technologies: ["React.js", "Node.js", "mongoDB", "Express.js"],
   },
-
+  {
+    year: "2024 - Present",
+    role: "MERN Stack Developer Intern",
+    company: "Luminar Technolab",
+    description: `As a MERN Full Stack Developer Intern, I will contribute to developing web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js). My role involves building both front-end and back-end components, ensuring seamless integration and functionality across the entire stack.`,
+    technologies: ["React.js", "Node.js", "mongoDB", "Express.js"],
+  },
 ];
 
 export const PROJECTS = [
