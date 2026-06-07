@@ -1,119 +1,149 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { Tilt } from "react-tilt";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
+
+const TILT_OPTIONS = { max: 8, perspective: 1200, scale: 1.02, speed: 500, reset: true };
+
+const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.12 } } };
+const cardAnim = {
+  hidden: { opacity: 0, y: 50, scale: 0.95 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.65, ease: [0.22,1,0.36,1] } },
+};
+
+const projectsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: PROJECTS.map((p, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: {
+      "@type": "CreativeWork",
+      name: p.title,
+      description: p.description,
+      url: p.liveLink || undefined,
+      programmingLanguage: p.technologies,
+    },
+  })),
+};
 
 const Projects = () => {
-  // JSON-LD for SEO/AEO
-  const projectsSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": PROJECTS.map((project, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "item": {
-        "@type": "CreativeWork",
-        "name": project.title,
-        "description": project.description,
-        "url": project.liveLink || undefined,
-        "programmingLanguage": project.technologies,
-      }
-    }))
-  };
-
   return (
-    <section id="projects" className="border-b border-neutral-900 pb-20">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectsSchema) }}
-      />
+    <section id="projects" className="py-28 border-b border-white/[0.04]" aria-label="Portfolio projects">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(projectsSchema) }} />
 
-      <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl lg:text-5xl font-light tracking-tight"
+      {/* Heading */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }} transition={{ duration: 0.6 }}
+        className="text-center mb-16"
       >
-        Featured <span className="text-neutral-500">Projects</span>
-      </motion.h2>
+        <span className="text-xs uppercase tracking-[0.3em] text-violet-400 font-semibold">Portfolio</span>
+        <h2 className="font-display text-4xl lg:text-5xl font-bold text-white mt-3">
+          Featured <span className="shimmer-text">Projects</span>
+        </h2>
+        <p className="mt-4 text-neutral-500 text-sm max-w-md mx-auto">
+          Real-world applications I've designed, built, and shipped.
+        </p>
+      </motion.div>
 
-      <div className="flex flex-col gap-16 lg:gap-24 px-4">
+      {/* Project grid */}
+      <motion.div
+        variants={stagger}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
+      >
         {PROJECTS.map((project, index) => (
-          <div key={index} className="flex flex-col lg:flex-row lg:items-center justify-center gap-10 group">
-            {/* Image Side - Comes from Left */}
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.8 }}
-              className="w-full lg:w-1/3 flex justify-center"
-            >
-              <div className="relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/50">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  loading="lazy"
-                  className="w-full h-auto max-w-[200px] object-cover transition-transform duration-500 group-hover:scale-105 grayscale group-hover:grayscale-0 shadow-2xl"
-                />
-              </div>
-            </motion.div>
+          <motion.div key={index} variants={cardAnim}>
+            <Tilt options={TILT_OPTIONS} className="h-full">
+              <article className="group relative h-full flex flex-col glass glass-hover rounded-2xl border border-white/[0.06] hover:border-violet-500/25 overflow-hidden transition-all duration-300 shadow-xl hover:shadow-violet-500/10">
 
-            {/* Content Side - Comes from Right */}
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 0.8 }}
-              className="w-full lg:w-2/3 max-w-2xl"
-            >
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-xl font-semibold text-neutral-100 group-hover:text-purple-800 transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                  <div className="flex gap-4">
+                {/* Image */}
+                <div className="relative overflow-hidden bg-neutral-900/60 h-44">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover grayscale-[50%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  />
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f]/90 via-[#0a0a0f]/20 to-transparent" />
+
+                  {/* Type badge */}
+                  {project.type && (
+                    <span className="absolute top-3 left-3 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-violet-300 rounded-lg"
+                      style={{ background: "rgba(124,58,237,0.25)", border: "1px solid rgba(124,58,237,0.35)" }}>
+                      {project.type}
+                    </span>
+                  )}
+
+                  {/* Action links */}
+                  <div className="absolute top-3 right-3 flex gap-2">
                     {project.gitLink && (
                       <a
                         href={project.gitLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-neutral-400 hover:text-white transition-colors p-2 bg-neutral-800/50 rounded-full"
-                        title="Source Code"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label={`${project.title} GitHub repository`}
+                        className="p-2 glass rounded-lg text-neutral-300 hover:text-white hover:border-white/20 transition-all duration-200 border border-white/[0.08]"
                       >
-                        <LuGithub className="text-xl" />
+                        <LuGithub className="text-sm" />
                       </a>
                     )}
                     {project.liveLink && (
                       <a
                         href={project.liveLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-neutral-400 hover:text-cyan-400 transition-colors p-2 bg-neutral-800/50 rounded-full"
-                        title="Live Demo"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label={`${project.title} live demo`}
+                        className="p-2 glass rounded-lg text-cyan-400 hover:text-cyan-300 hover:border-cyan-400/30 transition-all duration-200 border border-white/[0.08]"
                       >
-                        <FaExternalLinkAlt className="text-lg" />
+                        <FaExternalLinkAlt className="text-sm" />
                       </a>
                     )}
                   </div>
                 </div>
 
-                <p className="text-neutral-400 font-light text-sm leading-relaxed">
-                  {project.description}
-                </p>
+                {/* Content */}
+                <div className="flex flex-col flex-1 p-5 gap-3">
+                  {/* Org */}
+                  {project.organization && (
+                    <div className="flex items-center gap-1.5 text-[11px] text-neutral-500">
+                      <HiOutlineOfficeBuilding className="text-xs" />
+                      {project.organization}
+                    </div>
+                  )}
 
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-4 py-1.5 text-xs font-semibold tracking-wide text-purple-300 bg-purple-900/10 border border-purple-900/30 rounded-lg"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                  {/* Title */}
+                  <h3 className="font-display text-base font-semibold text-neutral-100 group-hover:text-violet-200 transition-colors duration-300 leading-snug">
+                    {project.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-neutral-500 text-xs leading-relaxed flex-1">
+                    {project.description}
+                  </p>
+
+                  {/* Tech tags */}
+                  <div className="flex flex-wrap gap-1.5 pt-1">
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2.5 py-1 text-[10px] font-medium tracking-wide text-purple-300 rounded-md"
+                        style={{ background: "rgba(124,58,237,0.1)", border: "1px solid rgba(124,58,237,0.2)" }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          </div>
+              </article>
+            </Tilt>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

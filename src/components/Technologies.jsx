@@ -1,67 +1,84 @@
-import { FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { RiTailwindCssFill, RiReactjsLine } from "react-icons/ri";
+import { FaHtml5, FaCss3Alt, FaNodeJs, FaGitAlt, FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiExpress, SiMongodb, SiPostgresql } from "react-icons/si";
 import { motion } from "framer-motion";
+import { Tilt } from "react-tilt";
 
-const iconVariants = (duration) => ({
-  initial: { y: -8 },
-  animate: {
-    y: [8, -8],
-    transition: {
-      duration: duration,
-      ease: "easeInOut",
-      repeat: Infinity,
-      repeatType: "reverse",
-    },
-  },
-});
+const TILT_OPTIONS = { max: 20, perspective: 800, scale: 1.08, speed: 400, reset: true };
+
+const TECH_STACK = [
+  { icon: <FaReact      />, name: "React",      color: "#06b6d4", glow: "rgba(6,182,212,0.4)",   delay: 0    },
+  { icon: <FaNodeJs     />, name: "Node.js",    color: "#22c55e", glow: "rgba(34,197,94,0.4)",   delay: 0.05 },
+  { icon: <SiMongodb    />, name: "MongoDB",    color: "#16a34a", glow: "rgba(22,163,74,0.4)",   delay: 0.1  },
+  { icon: <SiPostgresql />, name: "PostgreSQL", color: "#60a5fa", glow: "rgba(96,165,250,0.4)",  delay: 0.15 },
+  { icon: <SiExpress    />, name: "Express",    color: "#d4d4d8", glow: "rgba(212,212,216,0.3)", delay: 0.2  },
+  { icon: <IoLogoJavascript />, name: "JavaScript", color: "#facc15", glow: "rgba(250,204,21,0.4)", delay: 0.25 },
+  { icon: <RiTailwindCssFill />, name: "Tailwind", color: "#38bdf8", glow: "rgba(56,189,248,0.4)", delay: 0.3 },
+  { icon: <FaHtml5      />, name: "HTML5",      color: "#f97316", glow: "rgba(249,115,22,0.4)",  delay: 0.35 },
+  { icon: <FaCss3Alt    />, name: "CSS3",       color: "#818cf8", glow: "rgba(129,140,248,0.4)", delay: 0.4  },
+  { icon: <FaGitAlt     />, name: "Git",        color: "#f97316", glow: "rgba(249,115,22,0.4)",  delay: 0.45 },
+];
+
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.07 } },
+};
+const cardVariants = {
+  hidden: { opacity: 0, y: 40, scale: 0.85 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: [0.22,1,0.36,1] } },
+};
 
 const Technologies = () => {
-  const techStack = [
-    { icon: <RiReactjsLine className="text-4xl lg:text-5xl text-cyan-400" />, duration: 2.5, name: "React" },
-    { icon: <FaNodeJs className="text-4xl lg:text-5xl text-green-500" />, duration: 3, name: "Node.js" },
-    { icon: <SiMongodb className="text-4xl lg:text-5xl text-green-600" />, duration: 5, name: "MongoDB" },
-    { icon: <SiPostgresql className="text-4xl lg:text-5xl text-blue-400" />, duration: 2, name: "PostgreSQL" },
-    { icon: <SiExpress className="text-4xl lg:text-5xl text-white" />, duration: 6, name: "Express" },
-    { icon: <IoLogoJavascript className="text-4xl lg:text-5xl text-yellow-400" />, duration: 3.5, name: "JavaScript" },
-    { icon: <RiTailwindCssFill className="text-4xl lg:text-5xl text-cyan-400" />, duration: 4, name: "Tailwind" },
-    { icon: <FaHtml5 className="text-4xl lg:text-5xl text-orange-500" />, duration: 2.8, name: "HTML5" },
-    { icon: <FaGitAlt className="text-4xl lg:text-5xl text-orange-600" />, duration: 4.5, name: "Git" },
-  ];
-
   return (
-    <section id="technologies" className="border-b border-neutral-900 pb-20">
-      <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.5 }}
-        className="my-20 text-center text-3xl font-light tracking-tight"
-      >
-        Core <span className="text-neutral-500">Tech Stack</span>
-      </motion.h2>
+    <section id="technologies" className="py-28 border-b border-white/[0.04]" aria-label="Tech stack">
 
+      {/* Heading */}
       <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1 }}
-        className="flex flex-wrap items-center justify-center gap-6 lg:gap-8"
+        initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }} transition={{ duration: 0.6 }}
+        className="text-center mb-16"
       >
-        {techStack.map((tech, index) => (
-          <div key={index} className="flex flex-col items-center gap-2">
-            <motion.div
-              variants={iconVariants(tech.duration)}
-              initial="initial"
-              animate="animate"
-              className="relative group p-4 rounded-2xl border border-neutral-800 bg-neutral-900/50 hover:border-neutral-700 transition-colors"
-            >
-              <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 blur-xl transition-opacity rounded-2xl" />
-              {tech.icon}
-            </motion.div>
-            <span className="text-[10px] uppercase tracking-widest text-neutral-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-              {tech.name}
-            </span>
-          </div>
+        <span className="text-xs uppercase tracking-[0.3em] text-violet-400 font-semibold">My Toolkit</span>
+        <h2 className="font-display text-4xl lg:text-5xl font-bold text-white mt-3">
+          Core <span className="shimmer-text">Tech Stack</span>
+        </h2>
+        <p className="mt-4 text-neutral-500 text-sm max-w-md mx-auto">
+          Technologies I use to craft high-performance, scalable web experiences.
+        </p>
+      </motion.div>
+
+      {/* Grid */}
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 max-w-3xl mx-auto"
+      >
+        {TECH_STACK.map(({ icon, name, color, glow }) => (
+          <motion.div key={name} variants={cardVariants}>
+            <Tilt options={TILT_OPTIONS}>
+              <div className="group relative flex flex-col items-center gap-3 p-5 glass glass-hover rounded-2xl border border-white/[0.06] hover:border-white/[0.14] transition-all duration-300 cursor-default select-none">
+                {/* Icon glow */}
+                <div
+                  className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-400"
+                  style={{ background: `radial-gradient(circle at 50% 40%, ${glow} 0%, transparent 70%)` }}
+                />
+                {/* Icon */}
+                <span
+                  className="relative z-10 text-4xl lg:text-5xl transition-transform duration-300 group-hover:scale-110"
+                  style={{ color, filter: `drop-shadow(0 0 10px ${glow})` }}
+                >
+                  {icon}
+                </span>
+                {/* Label */}
+                <span className="relative z-10 text-[11px] font-semibold uppercase tracking-widest text-neutral-400 group-hover:text-neutral-200 transition-colors duration-300">
+                  {name}
+                </span>
+              </div>
+            </Tilt>
+          </motion.div>
         ))}
       </motion.div>
     </section>
