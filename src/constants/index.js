@@ -1,55 +1,140 @@
-import project1 from "../assets/projects/project-1.png";
-import project5 from "../assets/projects/project-5.png";
-import project8 from "../assets/projects/project-8.png";
 import projectAbroadStudies from "../assets/projects/abroad.png";
 import projectEducation from "../assets/projects/education.png";
+
 import projectSevernValley from "../assets/projects/homestay.png";
 import projectWorkTracker from "../assets/projects/worktracker.png";
 
 export const HERO_TITLE_NAME = `Sarang P Achari`;
 
-export const HERO_ROLE = `Software Developer`;
+export const HERO_ROLE = `React.js Developer | Frontend Developer | Full Stack Developer`;
 
-export const HERO_CONTENT = `I am a Full Stack MERN Developer with 1+ year of professional experience, currently working on building custom web applications. I hold a BCA degree and specialize in developing scalable and user-friendly web solutions using React.js, Node.js, Express.js, and MongoDB.
+export const HERO_CONTENT = `I build responsive web applications and business-focused digital solutions using React.js, JavaScript, and modern web technologies. With 2+ years of combined professional and internship experience, I have worked on business applications, e-commerce platforms, learning management systems, and production websites.`;
 
-I also work extensively with modern UI frameworks such as Shadcn UI, Tailwind CSS, focusing on clean architecture, performance optimization, and real-world business applications.`;
+export const ABOUT_TEXT = `I'm a Software Developer with 2+ years of combined professional and internship experience, specializing in React.js and frontend development.
 
-export const ABOUT_TEXT = `I am a Full Stack MERN Developer with 1+ year of professional experience, currently working as a Full Stack Developer focused on building custom web applications. I hold a Bachelor of Computer Applications (BCA) degree and am a self-taught developer with a strong interest in creating scalable, secure, and high-performance web solutions.
+My experience includes developing business applications, role-based dashboards, learning management systems, HRMS, attendance and payroll workflows, and responsive business websites.
 
-My core expertise lies in the MERN stack, including React.js for building dynamic user interfaces, Node.js and Express.js for backend development, and MongoDB for database management. I also work extensively with modern UI frameworks and libraries such as Tailwind CSS, Shadcn UI, Flowbite, and Daisy UI to design responsive, accessible, and user-friendly interfaces.
+I have worked with React.js, JavaScript, Redux, Tailwind CSS, Node.js, Express.js, MongoDB, and PostgreSQL. Alongside application development, I have hands-on experience with WordPress, Elementor, WooCommerce, website deployment, and production troubleshooting.
 
-In my current role, I primarily develop custom web applications tailored to business requirements, implement RESTful APIs, handle authentication and authorization, and optimize application performance. I focus on writing clean, maintainable code and following best practices in full stack development.
+Currently, I work as a Web Developer at Bigbee Experience Management Pvt. Ltd., where I develop service pages, campaign landing pages, e-commerce websites, and maintain production websites.
 
-I am passionate about continuous learning, problem-solving, and staying up to date with modern web technologies. I enjoy taking on challenging projects, improving system architecture, and delivering reliable web applications that provide real value to users and businesses.`;
+Previously, at 4 Hand Studio, I contributed to multiple full-stack business applications, collaborating on frontend development, API integration, authentication, and application workflows.
+
+I enjoy transforming business requirements into practical, responsive, and reliable digital solutions.`;
 
 export const EXPERIENCES = [
   {
-    year: "Mar 2025 – Present",
+    year: "Aug 2026 – Present",
+    role: "Web Developer",
+    company: "Bigbee Experience Management Pvt. Ltd.",
+    description: `Maintaining and improving four business websites using WordPress, Elementor, HTML, CSS, and JavaScript. Designed and developed 9+ service pages for the main company website and created campaign-specific advertising landing pages. Developed and launched Hoppibite.com, a customized nuts and dry-fruits e-commerce website using WordPress and WooCommerce, including product catalogs, shopping functionality, and payment gateway integration. Integrated Tawk.to live chat for customer enquiries and lead generation. Also handled production website troubleshooting, server overload and PHP configuration issues, website recovery, media optimization, security checks, backups, and performance monitoring.`,
+    technologies: [
+      "WordPress",
+      "Elementor",
+      "WooCommerce",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "PHP",
+      "Payment Gateway Integration",
+      "FTP",
+      "Website Optimization",
+    ],
+  },
+  {
+    year: "Mar 2025 – Jun 2026",
     role: "Full Stack Developer",
-    company: "4 Hand Studio",
-    description: `Currently working as a Full Stack Developer specializing in custom web application development for businesses. I build end-to-end web solutions using the MERN stack along with PostgreSQL, handling both front-end and back-end development. My work includes developing scalable web applications, designing RESTful APIs, implementing secure authentication systems, and integrating payment gateways such as Razorpay, Stripe, and Cashfree. I focus on delivering reliable, high-performance applications tailored to real-world business requirements.`,
+    company: "4 Hand Studio Pvt. Ltd.",
+    description: `Developed frontend modules for four business applications using React.js, JavaScript, and Tailwind CSS. Built role-specific dashboards and student application workflows for an abroad education platform. Developed learning management interfaces covering courses, assessments, student progress, subscriptions, and certificates. Contributed to HRMS applications involving employee management, attendance, payroll, live attendance, and GPS-based tracking. Also worked on school and college management systems with RFID attendance, WhatsApp notifications, and study material distribution. Built real-time chat functionality using Socket.IO and integrated REST APIs using Axios. Implemented authentication, protected routes, and role-based interfaces using Redux and Context API. Collaborated with backend developers on PostgreSQL, MongoDB, debugging, and Linux/Nginx deployment.`,
     technologies: [
       "React.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "Redux",
+      "Context API",
       "Node.js",
       "Express.js",
       "MongoDB",
       "PostgreSQL",
-      "Razorpay",
-      "Stripe",
-      "Cashfree",
+      "Socket.IO",
+      "Axios",
+      "REST APIs",
+      "Linux",
+      "Nginx",
     ],
   },
   {
-    year: "Jan 2025 - Present",
-    role: "Junior Full Stack Developer",
-    company: "Freelance.",
-    description: ` I specialize in freelancing web development projects using the MERN stack. I handle both front-end and back-end development, creating dynamic and responsive applications with MongoDB, Express.js, React.js, and Node.js, ensuring a seamless and integrated web experience for clients.`,
-    technologies: ["React.js", "Node.js", "mongoDB", "Express.js"],
+    year: "Jul 2024 – Jan 2025",
+    role: "MERN Stack Developer Intern",
+    company: "Luminar Technolab",
+    description: `Developed responsive web interfaces using React.js, JavaScript, HTML5, CSS3, and Tailwind CSS. Gained practical experience in MERN stack application development using MongoDB, Express.js, React.js, and Node.js, including server setup, API integration, database connectivity, debugging, and application deployment using Vercel.`,
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+  },
+  {
+    year: "Jan 2025 – Present",
+    role: "Freelance Web Developer",
+    company: "Freelance",
+    description: `Worked on freelance web development projects, building responsive business websites and web applications. Developed frontend interfaces using React.js, Tailwind CSS, and modern JavaScript, with integrations such as Google Maps API and WhatsApp API. Focused on responsive design, user experience, and practical business requirements.`,
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "HTML5",
+      "CSS3",
+      "Google Maps API",
+      "WhatsApp API",
+    ],
   },
 ];
 
 export const PROJECTS = [
   {
+    title: "Work Tracker – Business Management Application",
+    organization: "Freelance",
+    type: "Full Stack Web Application",
+    liveLink: "",
+    gitLink: "",
+    image: projectWorkTracker,
+    description:
+      "Developed a business management application with workflows for service request management, employee operations, and business activity tracking. Implemented inventory management, profit and loss tracking, PDF invoice generation, and JWT-based authentication with session management. Also developed GPS-enabled employee attendance, location-based check-ins, and work timeline reporting.",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "JWT Authentication",
+      "GPS Tracking",
+      "PDF Generation",
+    ],
+  },
+  {
+    title: "Severn Valley – Homestay Website",
+    organization: "Freelance",
+    type: "Business Website",
+    liveLink: "https://severnvalley.co.in",
+    gitLink: "",
+    image: projectSevernValley,
+    description:
+      "Developed a responsive homestay website featuring custom carousels, location information, and mobile-friendly layouts. Integrated Google Maps API for location services and WhatsApp API for direct customer enquiries, making it easier for visitors to explore the property and contact the business.",
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Google Maps API",
+      "WhatsApp API",
+      "React Router DOM",
+    ],
+  },
+   {
     title: "Abroad Studies – Custom Web Application",
     organization: "4 Hand Studio",
     type: "Custom Business Application",
@@ -83,68 +168,10 @@ export const PROJECTS = [
       "MongoDB",
     ],
   },
-  {
-    title: "Severn Valley – Homestay Website",
-    organization: "Freelance",
-    type: "Business Website",
-    liveLink: "https://severnvalley.co.in",
-    gitLink: "",
-    image: projectSevernValley,
-    description:
-      "Developed a homestay website to simplify bookings and communication with location highlights. Integrated Google Maps API for location display, WhatsApp API for direct inquiries, and implemented a responsive UI with smooth navigation using React Router DOM.",
-    technologies: [
-      "React JS",
-      "Tailwind CSS",
-      "Google Maps API",
-      "WhatsApp API",
-    ],
-  },
-  {
-    title: "Work Tracker",
-    organization: "Freelance",
-    type: "Task Management Application",
-    liveLink: "https://worktracker.com",
-    gitLink: "",
-    image: projectWorkTracker,
-    description:
-      "Built a task management web application to track and organize daily work activities efficiently. Implemented real-time data handling and authentication using Firebase, with a responsive and intuitive user interface.",
-    technologies: [
-      "React",
-      "React-Bootstrap",
-      "Firebase",
-    ],
-  },
-  {
-    title: "Q-Bucket",
-    liveLink: "https://qbucket.mac.edu.in/",
-    gitLink: "",
-    image: project1,
-    description:
-      "A fully functional platform built with HTML and Pure CSS for browsing previous Mahatma Gandhi University question papers, featuring a user-friendly interface.",
-    technologies: ["HTML", "Pure CSS"],
-  },
-  {
-    title: "Just Home Real Estate UI",
-    liveLink: "https://justhomebysarang.netlify.app/#",
-    gitLink: "https://github.com/sarangpachari/justhome.git",
-    image: project5,
-    description:
-      "A sleek real estate UI built with HTML and Tailwind CSS for a modern, responsive design.",
-    technologies: ["HTML", "Tailwind CSS"],
-  },
-  {
-    title: "Furniture World UI",
-    liveLink: "https://sarangpachari.github.io/furnitureworld/",
-    gitLink: "https://github.com/sarangpachari/furnitureworld.git",
-    image: project8,
-    description:
-      "Furniture World UI is a sleek and responsive web interface built with HTML and Pure CSS, focused on modern furniture design.",
-    technologies: ["HTML", "Pure CSS"],
-  },
 ];
 
 export const CONTACT = {
-  address: "Kochi, India ",
-  phoneNo: "+91 7012 981 845 ",
+  address: "Bengaluru, Karnataka, India",
+  phoneNo: "+91 7012981845",
   email: "sarangpachari@gmail.com",
 };

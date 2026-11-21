@@ -12,14 +12,15 @@ const NAV_LINKS = [
 ];
 
 const SOCIALS = [
-  { icon: FaLinkedin, href: "https://www.linkedin.com/in/sarangpachari/", label: "LinkedIn",  hoverColor: "#0077B5" },
-  { icon: FaGithub,   href: "https://github.com/sarangpachari",            label: "GitHub",   hoverColor: "#ffffff" },
-  { icon: FaWhatsapp, href: "https://wa.me/+917012981845",                  label: "WhatsApp", hoverColor: "#25D366" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/sarangpachari/", label: "LinkedIn" },
+  { icon: FaGithub,   href: "https://github.com/sarangpachari",            label: "GitHub" },
+  { icon: FaWhatsapp, href: "https://wa.me/+917012981845",                  label: "WhatsApp" },
 ];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [mobileOpen, setMobileOpen] = useState(false);
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -48,72 +49,93 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className={`sticky top-0 z-50 flex items-center justify-between px-6 lg:px-12 py-4 transition-all duration-500 ${
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className={`sticky top-0 z-50 flex items-center justify-between px-6 lg:px-12 py-4 transition-all duration-300 border-b-3 border-ink ${
         scrolled
-          ? "glass border-b border-white/[0.06] shadow-[0_4px_40px_rgba(0,0,0,0.4)]"
-          : "bg-transparent"
+          ? "bg-concrete/95 backdrop-blur-sm shadow-[0_4px_0_0_#111111]"
+          : "bg-concrete"
       }`}
     >
       {/* Logo */}
-      <motion.a
+      <a
         href="#hero"
-        whileHover={{ scale: 1.08, rotate: [0, -4, 4, 0] }}
-        transition={{ duration: 0.4 }}
-        className="flex items-center gap-2 cursor-pointer"
+        className="flex items-center gap-3 cursor-pointer group"
         aria-label="Sarang P Achari – home"
       >
         <img
           src={logo}
           alt="Sarang Logo"
-          className="h-9 w-auto filter brightness-125 drop-shadow-[0_0_8px_rgba(124,58,237,0.6)]"
+          className="h-8 w-auto"
         />
-      </motion.a>
+        <span className="hidden sm:block font-mono text-xs font-bold uppercase tracking-widest text-ink">
+          Sarang<span className="text-accent">.</span>
+        </span>
+      </a>
 
       {/* Desktop nav links */}
-      <ul className="hidden md:flex items-center gap-1">
+      <ul className="hidden md:flex items-center gap-0">
         {NAV_LINKS.map(({ label, href }) => {
           const isActive = activeSection === href.replace("#", "");
           return (
             <li key={href}>
               <a
                 href={href}
-                className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-300 ${
+                className={`relative px-4 py-2 font-mono text-xs font-semibold uppercase tracking-wider transition-colors duration-200 border-b-2 ${
                   isActive
-                    ? "text-white"
-                    : "text-neutral-400 hover:text-white"
+                    ? "text-accent border-accent"
+                    : "text-ink border-transparent hover:text-accent hover:border-accent"
                 }`}
               >
                 {label}
-                {isActive && (
-                  <motion.span
-                    layoutId="nav-indicator"
-                    className="absolute inset-0 rounded-lg bg-white/[0.06] border border-white/[0.1]"
-                    transition={{ type: "spring", bounce: 0.25, duration: 0.5 }}
-                  />
-                )}
               </a>
             </li>
           );
         })}
       </ul>
 
-      {/* Socials */}
-      <div className="flex items-center gap-1">
-        {SOCIALS.map(({ icon: Icon, href, label, hoverColor }) => (
-          <motion.a
+      {/* Socials + Mobile toggle */}
+      <div className="flex items-center gap-2">
+        {SOCIALS.map(({ icon: Icon, href, label }) => (
+          <a
             key={label}
             href={href}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            whileHover={{ y: -3, color: hoverColor }}
-            className="p-2.5 rounded-xl text-neutral-400 hover:bg-white/[0.05] transition-all duration-200 text-xl"
+            className="p-2 text-ink hover:text-accent transition-colors duration-200 text-lg"
           >
             <Icon />
-          </motion.a>
+          </a>
         ))}
+
+        {/* Mobile hamburger */}
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="md:hidden p-2 ml-2 border-2 border-ink font-mono text-xs font-bold"
+          aria-label="Toggle menu"
+        >
+          {mobileOpen ? "✕" : "☰"}
+        </button>
       </div>
+
+      {/* Mobile menu */}
+      {mobileOpen && (
+        <div className="absolute top-full left-0 right-0 bg-white border-b-3 border-ink shadow-brutal md:hidden">
+          <ul className="flex flex-col">
+            {NAV_LINKS.map(({ label, href }) => (
+              <li key={href} className="border-b border-ink/10">
+                <a
+                  href={href}
+                  onClick={() => setMobileOpen(false)}
+                  className="block px-6 py-4 font-mono text-sm font-semibold uppercase tracking-wider text-ink hover:bg-accent hover:text-white transition-colors"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </motion.nav>
   );
 };

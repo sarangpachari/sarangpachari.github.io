@@ -1,5 +1,4 @@
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
-import { motion } from "framer-motion";
 import { HiArrowUp } from "react-icons/hi";
 
 const SOCIALS = [
@@ -12,54 +11,43 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative py-12 border-t border-white/[0.04]">
-      {/* Gradient glow line at top */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px"
-        style={{ background: "linear-gradient(90deg, transparent, rgba(124,58,237,0.5), rgba(6,182,212,0.4), transparent)" }}
-        aria-hidden="true"
-      />
+    <footer className="relative py-10 border-t-3 border-ink bg-ink text-concrete">
 
-      <div className="container mx-auto px-6 lg:px-12 flex flex-col items-center gap-6">
-        {/* Social links */}
-        <div className="flex gap-3">
+      <div className="container mx-auto px-6 lg:px-12 max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-6">
+
+        {/* Left: credit */}
+        <div className="flex flex-col gap-1">
+          <p className="font-mono text-xs font-bold uppercase tracking-widest">
+            © {currentYear} Sarang P Achari
+          </p>
+          <p className="font-mono text-[10px] text-concrete/50 tracking-wider">
+            Full Stack MERN Developer · Kochi, India
+          </p>
+        </div>
+
+        {/* Center: socials */}
+        <div className="flex gap-2">
           {SOCIALS.map(({ icon: Icon, href, label }) => (
-            <motion.a
+            <a
               key={label}
               href={href}
               target="_blank" rel="noopener noreferrer"
               aria-label={label}
-              whileHover={{ y: -3, scale: 1.12 }}
-              className="p-2.5 glass rounded-xl text-neutral-500 hover:text-neutral-200 border border-white/[0.05] hover:border-white/[0.1] transition-all duration-200 text-lg"
+              className="p-2.5 border-2 border-concrete/30 text-concrete/60 hover:text-accent hover:border-accent transition-all duration-200 text-lg"
             >
               <Icon />
-            </motion.a>
+            </a>
           ))}
         </div>
 
-        {/* Credit */}
-        <div className="flex flex-col items-center gap-1 text-center">
-          <p className="text-neutral-600 text-[11px] uppercase tracking-[0.2em] font-medium">
-            © {currentYear} Sarang P Achari
-          </p>
-          <div className="flex items-center gap-3">
-            <div className="h-px w-6 bg-neutral-800" />
-            <p className="text-neutral-700 text-[10px] italic font-light tracking-wide">
-              Full Stack MERN Developer · Kochi, India
-            </p>
-            <div className="h-px w-6 bg-neutral-800" />
-          </div>
-        </div>
-
-        {/* Back to top */}
-        <motion.a
+        {/* Right: back to top */}
+        <a
           href="#hero"
           aria-label="Back to top"
-          whileHover={{ y: -3 }}
-          whileTap={{ scale: 0.9 }}
-          className="p-2.5 glass rounded-xl text-neutral-500 hover:text-violet-400 border border-white/[0.05] hover:border-violet-500/30 transition-all duration-200"
+          className="p-2.5 border-2 border-concrete/30 text-concrete/60 hover:text-accent hover:border-accent transition-all duration-200"
         >
           <HiArrowUp className="text-lg" />
-        </motion.a>
+        </a>
       </div>
     </footer>
   );
